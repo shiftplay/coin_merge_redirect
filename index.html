@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Redirect</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+          
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.shiftplay.dramaxagh";
+            }
+            else {
+                window.location.href = "https://yandex.ru/games/app/380095";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Redirecting based on your device...</p>
+</body>
+</html>
